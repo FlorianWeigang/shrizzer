@@ -1,0 +1,70 @@
+{
+    "repositories": {
+        "onassar": {
+            "type": "package",
+            "package": {
+                "name": "onassar/PHP-MetaParser",
+                "version": "0.1.0",
+                "source": {
+                    "url": "https://github.com/onassar/PHP-MetaParser.git",
+                    "type": "git",
+                    "reference": "20f35cf4db321427cc7d2cd8101c317593a27084"
+                }
+            }
+        }
+    },
+    "name": "Shrizzer",
+    "description": "The free, registration less, anonymously link timeline you ever waited for.",
+    "keywords": ["link", "timeline"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.4",
+        "dereuromark/media-embed": "0.*",
+        "doctrine/dbal": "^2.5",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0",
+        "onassar/PHP-MetaParser": "0.1.0",
+        "php-curl-class/php-curl-class": "^7.3",
+        "spatie/laravel-fractal": "^4.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "classmap": [
+            "database",
+            "vendor/onassar/PHP-MetaParser"
+        ],
+        "psr-4": {
+            "Shrizzer\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

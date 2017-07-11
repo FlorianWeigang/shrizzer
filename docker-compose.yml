@@ -1,0 +1,25 @@
+version: "2"
+services:
+  webserver-app:
+    image: nginx:1.11
+    ports:
+      - "80:80"
+    volumes:
+      - "./etc/nginx:/etc/nginx/conf.d"
+      - "./src:/var/www"
+  php:
+    image: servivum/php:7.0-fpm
+    volumes:
+      - "./etc/php/fpm/php-fpm.conf:/usr/local/etc/php-fpm.conf"
+      - "./etc/php/php.ini:/usr/local/etc/php/php.ini"
+      - "./src:/var/www"
+  mysql:
+    image: mariadb
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_USER=root
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=shrizzer
+      - MYSQL_USER=db
+      - MYSQL_PASSWORD=db

@@ -1,0 +1,437 @@
+/**
+ * KeenUI Reset
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+/**
+ * Header
+ */
+
+.small-header {
+  border: 0px solid white;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+
+/**
+ * Header Big
+ */
+
+.big-header {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #dedede;
+}
+
+
+header ul li a {
+  text-transform: uppercase;
+  color: #111111;
+}
+
+header .navbar {
+  margin-bottom: 0px;
+}
+
+header .navbar-brand {
+  padding: 0px
+}
+
+.navbar-brand img {
+  max-height: 30px;
+}
+
+header .navbar-toggle {
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+header .main-menu {
+  width: 100%
+}
+
+header .navbar-nav .menu-item .sub-menu {
+  list-style-type: none;
+}
+
+header .navbar-nav .menu-item.top-bar {
+  border-top: 1px solid #dedede;
+}
+
+header .navbar-nav .menu-item .sub-menu {
+  display: none
+}
+
+header .navbar-nav .menu-item.open .sub-menu {
+  display: block
+}
+
+header .navbar-nav .menu-item.open .sub-menu li {
+  margin-top: 10px;
+}
+/**
+ * Subnavigation
+ */
+.sub-navigation .container {
+  margin: 20px auto;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 20px;
+}
+
+/**
+ * Flasher
+ */
+
+.flasher {
+  margin-top: 10px;
+}
+
+/**
+ * Preloader
+ */
+
+.preloader {
+  margin: 25px 0px 20px 0px;
+  text-align: center;
+
+  p {
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+}
+
+/**
+ * Intro
+ */
+.intro  {
+  margin-bottom: 40px;
+}
+
+.intro p {
+  margin: 20px 0px 20px 0px;
+}
+
+/**
+ * Media Form
+ */
+.media-form .button-bar {
+  display: inline
+}
+
+.media-form form {
+  margin-bottom: 0px;
+}
+
+.media-form form .form-group {
+  margin-bottom: 0px;
+}
+
+.media-form .desktop-input input {
+  width: 420px;
+}
+
+/**
+ * Session List
+ */
+
+.session {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 15px;
+}
+
+.session .session-image img {
+  margin-top: 15px;
+}
+
+.session-list {
+  margin-top: 20px;
+}
+
+.session-list h2 {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.description h2 {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+
+.preview-box .panel-body {
+  height: 200px;
+  text-align: center;
+
+  img {
+    max-height: 160px;
+  }
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/**
+ * Media Item
+ */
+
+.media-block {
+  border: 1px solid #dedede;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color:white;
+}
+
+.media-item p img {
+  height: 20px;
+}
+
+.media-item {
+  width: 100%;
+}
+
+.media-item .h4 {
+  font-size: 16px;
+}
+
+.media-item .meta {
+  font-size: 12px;
+  border: 1px solid #dedede;
+  padding: 5px;
+}
+
+.media-item .image-preview {
+  text-align: center;
+}
+
+.media-item .media-item-margin {
+  margin: 10px;
+}
+
+.media-block .comment-section {
+  border-top: 1px solid #dedede;
+  background-color: #FAFAFA;
+}
+
+.media-block h5 {
+  font-weight: bold;
+  padding-bottom: 5px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.media-block .comment-list {
+  list-style-type: none;
+  padding: 0px;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.media-block .comment-list .comment {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 5px;
+  padding-top :5px;
+  padding-left: 15px;
+  background-color: #FAFAFA;
+}
+
+.media-block .comment-list .comment a {
+  color: #636b6f;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-right: 15px;
+  display:none;
+}
+
+.media-block .comment-list .comment:hover a {
+  display: block;
+}
+
+.voting-container {
+  padding: 0px;
+}
+
+.voting-bar {
+  text-align:right;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.voting-bar a {
+  color: #636b6f;
+  display: block;
+}
+
+.voting-bar strong {
+  margin-right: 4px;
+  display: block;
+}
+
+.voting-bar .voting-button {
+  margin-top: 5px;
+}
+
+.voting-bar .glyphicon-chevron-up.active {
+  color: green;
+  cursor: default;
+}
+
+.voting-bar .glyphicon-chevron-down.active {
+  color: red;
+  cursor: default;
+}
+
+/**
+ * Side-Navigation
+ */
+.side-navigation {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.side-navigation:first-child {
+  margin-top: 0px;
+}
+
+.side-navigation .group {
+  margin-top: 20px;
+}
+
+.side-navigation .group h5 {
+  font-weight: bold;
+}
+
+/**
+ * Notification
+ */
+.activity-list h4 {
+  margin-bottom: 20px;
+}
+
+.notification {
+  border-bottom: 1px solid #dedede;
+  margin: 10px 0px;
+  padding: 0px 10px 10px 10px;
+
+  i {
+    float:left;
+    width: 30px;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  div {
+
+    font-size: 12px;
+  }
+}
+
+
+/**
+ * Responsive additions
+ */
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 767px) {
+  .session-list .container {
+    margin-top: 0px;
+
+    .session {
+        padding-bottom: 5px;
+    }
+  }
+
+  .sub-navigation .container {
+    margin: 15px auto;
+    padding-bottom: 10px;
+    border-bottom: 0px;
+  }
+
+  .preLoader {
+    margin-top:10px;
+  }
+
+  .media-item .media-item-margin {
+    margin: 10px 0px;
+  }
+
+
+  .media-block .voting-bar {
+    margin-bottom: 10px;
+  }
+
+  .voting-bar {
+    text-align:right;
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+
+  .voting-bar strong {
+    margin-right: 4px;
+    display: block;
+  }
+
+  .intro  {
+    margin-bottom: 10px;
+  }
+
+  .preview-box .panel-body {
+    height: 120px;
+    text-align: center;
+
+    img {
+      max-height: 90px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+
+}
+
+
+
+.box {
+  margin-bottom: 20px;
+  border: 1px solid #dedede;
+  padding: 20px;
+}
+
+.box h4 {
+  margin-top: 0px;
+  font-size: 16px
+}
+
+.ui-alert {
+  margin-bottom: 0px;
+}
+
+.sidebar {
+  font-size: 12px
+}
